@@ -7,3 +7,7 @@ for(let hobby of hobbies){
 hobbies.forEach(hobby => {
     console.log(hobby);
 });
+
+const newHobbies = hobbies.map(hobby => "Hobby : " + hobby);
+
+console.log(newHobbies);
