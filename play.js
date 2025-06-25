@@ -1,9 +1,24 @@
-const sum = (...args) => {
-    let sum = 0;
-    args.forEach((arg) => {
-        sum += arg;
-    })
-    return sum;
+const user = {
+    name : "chinthaka",
+    age : 24,
+    greet(){
+        console.log("Hey...");
+    }
 }
 
-console.log(sum(1,2,3,4,5,6));
+const objDeStructuring = ({ name, age }) => {
+    console.log(name,age);
+}
+
+objDeStructuring(user);
+
+const { name, age } = user;
+console.log(name);
+console.log(age);
+
+
+
+const hobbies = ["Cooking","Sport","Movie"];
+
+const [ hobby1, hobby2, hobby3 ] = hobbies;
+console.log(hobby1,hobby2,hobby3);
