@@ -1,10 +1,5 @@
-const user = {
-    name : "Chinthaka",
-    age : 24,
-    greet : () => {
-        console.log("I am " + this.name);
-    }
-}
+const hobbies = ["Cricket","Swim","Dance"];
 
-console.log(user);
-user.greet();
+for(let hobby of hobbies){
+    console.log(hobby);
+}
