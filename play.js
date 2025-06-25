@@ -1,13 +1,8 @@
-const name_ = "Chinthaka";
+let name_ = "Chinthaka";
 let age = 24;
-const isMarried = true
+let isMarried = true;
 
-age = 27;
-
-// can't be re-asign to it
-// name_ = "Paramee";
-
-function userFunction(userName,userAge,userMarried){
+const userFunction = function(userName,userAge,userMarried){
     return (
         "I am " + 
         userName + 
