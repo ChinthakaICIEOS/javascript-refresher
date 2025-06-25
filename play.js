@@ -1,17 +1,15 @@
-const hobbies = ["Cricket","Swim","Dance"];
-
-for(let hobby of hobbies){
-    console.log(hobby);
+const user = {
+    name : "chinthaka",
+    age : 24,
+    greet(){
+        console.log("Hey...");
+    }
 }
 
-hobbies.forEach(hobby => {
-    console.log(hobby);
-});
+const newUser = {...user};
+console.log(newUser);
 
-const newHobbies = hobbies.map(hobby => "Hobby : " + hobby);
+const hobbies = ["Cooking","Sport","Gaming"];
 
+const newHobbies = [...hobbies];
 console.log(newHobbies);
-console.log(hobbies);
-
-hobbies.push("Cooking");
-console.log(hobbies);
