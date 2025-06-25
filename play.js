@@ -11,3 +11,7 @@ hobbies.forEach(hobby => {
 const newHobbies = hobbies.map(hobby => "Hobby : " + hobby);
 
 console.log(newHobbies);
+console.log(hobbies);
+
+hobbies.push("Cooking");
+console.log(hobbies);
