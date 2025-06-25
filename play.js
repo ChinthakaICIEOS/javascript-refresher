@@ -1,6 +1,11 @@
-var name_ = "Chinthaka";
-var age = 24;
-var isMarried = true
+const name_ = "Chinthaka";
+let age = 24;
+const isMarried = true
+
+age = 27;
+
+// can't be re-asign to it
+// name_ = "Paramee";
 
 function userFunction(userName,userAge,userMarried){
     return (
