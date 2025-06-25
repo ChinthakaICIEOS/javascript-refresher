@@ -2,7 +2,7 @@ let name_ = "Chinthaka";
 let age = 24;
 let isMarried = true;
 
-const userFunction = function(userName,userAge,userMarried){
+const userFunction = (userName,userAge,userMarried) => {
     return (
         "I am " + 
         userName + 
@@ -13,4 +13,10 @@ const userFunction = function(userName,userAge,userMarried){
     );
 }
 
-console.log(userFunction(name_,age,isMarried))
+const getSum = (a,b) => a + b;
+
+const addOne = a => a + 1;
+
+console.log(userFunction(name_,age,isMarried));
+console.log(getSum(3,4));
+console.log(addOne(7));
