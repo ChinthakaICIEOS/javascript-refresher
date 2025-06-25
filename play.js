@@ -1,15 +1,9 @@
-const user = {
-    name : "chinthaka",
-    age : 24,
-    greet(){
-        console.log("Hey...");
-    }
+const sum = (...args) => {
+    let sum = 0;
+    args.forEach((arg) => {
+        sum += arg;
+    })
+    return sum;
 }
 
-const newUser = {...user};
-console.log(newUser);
-
-const hobbies = ["Cooking","Sport","Gaming"];
-
-const newHobbies = [...hobbies];
-console.log(newHobbies);
+console.log(sum(1,2,3,4,5,6));
